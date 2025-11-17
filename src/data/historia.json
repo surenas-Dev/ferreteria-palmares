@@ -1,0 +1,25 @@
+{
+  "descripcion": "Ferretería Palmares nació con el objetivo de ofrecer productos de calidad a la comunidad de Pérez Zeledón.",
+  "hitos": [
+    {
+      "anio": 1996,
+      "evento": "Apertura de la primera tienda en Pérez Zeledón."
+    },
+    {
+      "anio": 2015,
+      "evento": "Expansión del catálogo y modernización del inventario."
+    },
+    {
+      "anio": 2022,
+      "evento": "Apertura de Ferretería Palmares Uvita."
+    }
+  ],
+  "noticias": [
+    {
+      "id": 1,
+      "titulo": "Nueva sucursal en Uvita",
+      "descripcion": "Oficialmente inaugurada.",
+      "fecha": "2022-10-01"
+    }
+  ]
+}
