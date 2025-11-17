@@ -1,7 +1,7 @@
-export default function FacebookPage() {
+﻿export default function FacebookPage() {
     return (
         <div>
-            <h1 className="text-3xl font-bold mb-6">�ltimas publicaciones</h1>
+            <h1 className="text-3xl font-bold mb-6">Últimas publicaciones</h1>
 
             <div className="flex justify-center">
                 <iframe

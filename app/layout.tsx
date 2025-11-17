@@ -1,26 +1,26 @@
-import "./globals.css";
+ï»¿import "./globals.css";
 import Link from "next/link";
 
 export const metadata = {
     title: {
-        default: "Ferretería Palmares",
-        template: "%s | Ferretería Palmares",
+        default: "FerreterÃ­a Palmares",
+        template: "%s | FerreterÃ­a Palmares",
     },
     description:
         "Materiales, herramientas y servicio de calidad en Palmares, Costa Rica.",
     openGraph: {
-        title: "Ferretería Palmares",
-        description: "Materiales y herramientas para construcción.",
+        title: "FerreterÃ­a Palmares",
+        description: "Materiales y herramientas para construcciÃ³n.",
         type: "website",
         locale: "es_CR",
         url: "https://ferreteriapalmares.cr",
-        siteName: "Ferretería Palmares",
+        siteName: "FerreterÃ­a Palmares",
         images: [
             {
                 url: "/og-image.png",
                 width: 1200,
                 height: 630,
-                alt: "Ferretería Palmares",
+                alt: "FerreterÃ­a Palmares",
             },
         ],
     },
@@ -37,14 +37,14 @@ export default function RootLayout({
                 {/* NAVBAR */}
                 <nav className="w-full bg-green-700 text-white px-6 py-4 flex justify-between items-center">
                     <Link href="/" className="text-xl font-bold">
-                        Ferretería Palmares
+                        FerreterÃ­a Palmares
                     </Link>
 
                     <div className="flex gap-4">
                         <Link href="/donde_encontrarnos">Sucursales</Link>
-                        <Link href="/quienes_somos">Quiénes somos</Link>
+                        <Link href="/quienes_somos">QuiÃ©nes somos</Link>
                         <Link href="/faq">Preguntas</Link>
-                        <Link href="/politicas">Políticas</Link>
+                        <Link href="/politicas">PolÃ­ticas</Link>
                     </div>
                 </nav>
 
@@ -53,13 +53,13 @@ export default function RootLayout({
 
                 {/* FOOTER */}
                 <footer className="w-full bg-gray-900 text-white text-center py-6 mt-10">
-                    <p>© {new Date().getFullYear()} Ferretería Palmares</p>
-                    <p>Pérez Zeledón • Uvita, Puntarenas</p>
+                    <p>Â© {new Date().getFullYear()} FerreterÃ­a Palmares</p>
+                    <p>PÃ©rez ZeledÃ³n â€¢ Uvita, Puntarenas</p>
                 </footer>
 
-                {/* BOTÓN WHATSAPP */}
+                {/* BOTÃ“N WHATSAPP */}
                 <a
-                    href="https://wa.me/506XXXXXXXX?text=¡Hola!%20Quiero%20más%20información."
+                    href="https://wa.me/506XXXXXXXX?text=Â¡Hola!%20Quiero%20mÃ¡s%20informaciÃ³n."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-xl text-3xl"

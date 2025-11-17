@@ -1,9 +1,9 @@
-export default function Contacto() {
+Ôªøexport default function Contacto() {
     return (
         <div>
             <h1 className="text-3xl font-bold mb-6">Contacto</h1>
 
-            <p className="mb-4">Para consultas, cotizaciones o informaciÛn adicional:</p>
+            <p className="mb-4">Para consultas, cotizaciones o informaci√≥n adicional:</p>
 
             <a
                 href="https://wa.me/50600000000"
@@ -12,7 +12,7 @@ export default function Contacto() {
                 WhatsApp
             </a>
 
-            <p className="mt-6">O visit· nuestras sucursales en PÈrez ZeledÛn y Uvita.</p>
+            <p className="mt-6">O visit√° nuestras sucursales en P√©rez Zeled√≥n y Uvita.</p>
         </div>
     );
 }

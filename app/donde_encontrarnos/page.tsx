@@ -1,5 +1,5 @@
-export const metadata = {
-  title: "D髇de encontrarnos | Ferreter韆 Palmares",
+锘縠xport const metadata = {
+  title: "D贸nde encontrarnos | Ferreter铆a Palmares",
 };
 
 export default function Sucursales() {
@@ -9,13 +9,13 @@ export default function Sucursales() {
                 Nuestras Sucursales
             </h1>
 
-            {/* Sucursal P閞ez Zeled髇 */}
+            {/* Sucursal P茅rez Zeled贸n */}
             <div className="mb-16">
                 <h2 className="text-3xl font-semibold text-palmares-gray mb-3">
-                    P閞ez Zeled髇
+                    P茅rez Zeled贸n
                 </h2>
                 <p className="text-gray-600 mb-4">
-                    100 metros oeste del cruce principal de Palmares, P閞ez Zeled髇.
+                    100 metros oeste del cruce principal de Palmares, P茅rez Zeled贸n.
                 </p>
 
                 <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200">

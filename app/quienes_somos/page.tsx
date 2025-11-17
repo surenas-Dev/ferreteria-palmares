@@ -1,4 +1,4 @@
-import { getHistoria, getHitos, getNoticias } from "@/controllers/historiaController";
+﻿import { getHistoria, getHitos, getNoticias } from "@/controllers/historiaController";
 
 export default function QuienesSomos() {
     const historia = getHistoria();
@@ -7,7 +7,7 @@ export default function QuienesSomos() {
 
     return (
         <div>
-            <h1 className="text-3xl font-bold mb-6">Qui�nes somos</h1>
+            <h1 className="text-3xl font-bold mb-6">Quiénes somos</h1>
 
             <p className="mb-6">{historia}</p>
 

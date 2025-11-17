@@ -1,4 +1,4 @@
-import Image from "next/image";
+ï»¿import Image from "next/image";
 import MarcasSlider from "@/components/MarcasSlider";
 
 export default function Home() {
@@ -9,22 +9,22 @@ export default function Home() {
             <section className="text-center py-20 px-6">
                 <Image
                     src="/logo.png"
-                    alt="Ferretería Palmares"
+                    alt="FerreterÃ­a Palmares"
                     width={120}
                     height={120}
                     className="mx-auto mb-6"
                 />
 
                 <h1 className="text-4xl md:text-6xl font-bold text-palmares-green mb-4">
-                    Ferretería Palmares
+                    FerreterÃ­a Palmares
                 </h1>
 
                 <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                    Calidad, servicio y experiencia para tus proyectos de construcción.
+                    Calidad, servicio y experiencia para tus proyectos de construcciÃ³n.
                 </p>
 
                 <button className="mt-8 bg-palmares-green text-white px-8 py-3 rounded-full text-lg hover:bg-palmares-yellow hover:text-black transition duration-300 shadow-md">
-                    Contáctanos
+                    ContÃ¡ctanos
                 </button>
             </section>
 
@@ -32,10 +32,10 @@ export default function Home() {
             {/* Bloque de marcas */}
             <section className="py-20 text-center">
                 <h2 className="text-3xl font-bold text-palmares-green">
-                    Confían en nosotros
+                    ConfÃ­an en nosotros
                 </h2>
 
-                {/* Línea amarilla decorativa */}
+                {/* LÃ­nea amarilla decorativa */}
                 <div className="w-24 h-1 bg-palmares-yellow mx-auto mt-3 mb-10 rounded-full"></div>
 
                 {/* Slider */}
@@ -43,20 +43,20 @@ export default function Home() {
             </section>
 
 
-            {/* Línea dividida moderna */}
+            {/* LÃ­nea dividida moderna */}
             <div className="w-24 h-1 bg-palmares-yellow mx-auto rounded-full mb-20" />
 
 
-            {/* Sección de sucursales */}
+            {/* SecciÃ³n de sucursales */}
             <section className="px-6 md:px-20 mb-20">
                 <h2 className="text-3xl font-bold text-palmares-green mb-6 text-center">
-                    ¿Dónde encontrarnos?
+                    Â¿DÃ³nde encontrarnos?
                 </h2>
 
                 <div className="grid md:grid-cols-2 gap-10">
                     <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
                         <h3 className="text-xl font-semibold text-gray-900 mb-2">Palmares</h3>
-                        <p className="text-gray-600">Pérez Zeledón, San José</p>
+                        <p className="text-gray-600">PÃ©rez ZeledÃ³n, San JosÃ©</p>
                         <a
                             href="https://maps.app.goo.gl/3uYwN7AXwsbGzjhs6"
                             target="_blank"
@@ -85,10 +85,10 @@ export default function Home() {
             <div className="w-full h-[1px] bg-gray-200 my-20" />
 
 
-            {/* Últimas publicaciones (Facebook futuras) */}
+            {/* Ãšltimas publicaciones (Facebook futuras) */}
             <section className="px-6 md:px-20 mb-20">
                 <h2 className="text-3xl font-bold text-palmares-green text-center mb-10">
-                    Últimas publicaciones
+                    Ãšltimas publicaciones
                 </h2>
 
                 <div className="grid md:grid-cols-3 gap-6">
@@ -97,7 +97,7 @@ export default function Home() {
                             key={i}
                             className="h-52 bg-gray-100 rounded-xl shadow-sm flex items-center justify-center text-gray-400"
                         >
-                            Publicación {i}
+                            PublicaciÃ³n {i}
                         </div>
                     ))}
                 </div>

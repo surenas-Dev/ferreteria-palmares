@@ -1,23 +1,23 @@
-export const metadata = {
-    title: "Preguntas Frecuentes | Ferretería Palmares",
+ï»¿export const metadata = {
+    title: "Preguntas Frecuentes | FerreterÃ­a Palmares",
 };
 
 const preguntas = [
     {
-        q: "¿Cuáles son los horarios de atención?",
-        a: "Atendemos de lunes a sábado de 7:30am a 6:00pm.",
+        q: "Â¿CuÃ¡les son los horarios de atenciÃ³n?",
+        a: "Atendemos de lunes a sÃ¡bado de 7:30am a 6:00pm.",
     },
     {
-        q: "¿Hacen entregas a domicilio?",
-        a: "Sí, realizamos entregas dentro de Palmares y zonas cercanas.",
+        q: "Â¿Hacen entregas a domicilio?",
+        a: "SÃ­, realizamos entregas dentro de Palmares y zonas cercanas.",
     },
     {
-        q: "¿Aceptan pagos con tarjeta?",
-        a: "Aceptamos tarjetas, Sinpe móvil y transferencias.",
+        q: "Â¿Aceptan pagos con tarjeta?",
+        a: "Aceptamos tarjetas, Sinpe mÃ³vil y transferencias.",
     },
     {
-        q: "¿Tienen garantía en herramientas?",
-        a: "Sí, según la marca y tipo de herramienta.",
+        q: "Â¿Tienen garantÃ­a en herramientas?",
+        a: "SÃ­, segÃºn la marca y tipo de herramienta.",
     },
 ];
 
