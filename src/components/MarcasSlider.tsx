@@ -29,27 +29,29 @@ export default function MarcasSlider() {
     }, []);
 
     return (
-        <div className="overflow-hidden py-10 bg-white">
-            <div ref={ref} className="flex gap-16 whitespace-nowrap scroll-smooth">
-
-                {/* Duplico la lista para scroll infinito */}
+        <div className="overflow-hidden py-12 bg-white shadow-inner">
+            <div
+                ref={ref}
+                className="flex gap-20 px-10 whitespace-nowrap items-center"
+            >
                 {marcas.map((m, i) => (
                     <img
                         key={i}
                         src={`/marcas/${m}`}
-                        className="h-16 opacity-70 hover:opacity-100 transition"
-                        alt={`Marca ${m}`}
-                    />
-                ))}
-                {marcas.map((m, i) => (
-                    <img
-                        key={`dup-${i}`}
-                        src={`/marcas/${m}`}
-                        className="h-16 opacity-70 hover:opacity-100 transition"
+                        className="h-20 opacity-70 hover:opacity-100 transition"
                         alt={`Marca ${m}`}
                     />
                 ))}
 
+                {/* Segunda copia para scroll infinito */}
+                {marcas.map((m, i) => (
+                    <img
+                        key={`dup-${i}`}
+                        src={`/marcas/${m}`}
+                        className="h-20 opacity-70 hover:opacity-100 transition"
+                        alt={`Marca ${m}`}
+                    />
+                ))}
             </div>
         </div>
     );
