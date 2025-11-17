@@ -6,147 +6,177 @@ import MarcasSlider from "@/components/MarcasSlider";
 
 export default function Home() {
     return (
-        <div className="min-h-screen bg-white text-gray-800">
+        <div className="bg-white">
 
-            {/* HERO */}
-            <section className="relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/20 z-10" />
-
+            {/* HERO CORPORATIVO */}
+            <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
                 <Image
                     src="/hero-ferreteria.jpg"
                     alt="Ferretería Palmares"
                     fill
-                    className="object-cover brightness-75"
+                    className="object-cover brightness-[0.45]"
+                    priority
                 />
 
-                <div className="relative z-20 text-center py-40 px-6">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
-                    >
-                        <Image
-                            src="/logo.png"
-                            alt="Ferretería Palmares"
-                            width={130}
-                            height={130}
-                            className="mx-auto mb-6 drop-shadow-xl"
-                        />
-
-                        <h1 className="text-5xl md:text-6xl font-extrabold text-white drop-shadow-lg">
-                            Ferretería Palmares
-                        </h1>
-
-                        <p className="text-xl text-gray-100 max-w-2xl mx-auto mt-4 drop-shadow">
-                            Calidad, servicio y experiencia para tus proyectos.
-                        </p>
-
-                        <a
-                            href="https://wa.me/50600000000"
-                            target="_blank"
-                            className="inline-block mt-10 px-12 py-4 bg-palmares-green hover:bg-palmares-yellow text-white hover:text-black font-semibold rounded-full text-lg shadow-xl transition"
-                        >
-                            Contáctanos
-                        </a>
-                    </motion.div>
-                </div>
-            </section>
-
-            {/* MARCAS */}
-            <section className="py-20 text-center bg-gray-50">
-                <h2 className="text-4xl font-bold text-palmares-green">
-                    Nuestras Marcas
-                </h2>
-
-                <div className="w-24 h-1 bg-palmares-yellow mx-auto mt-3 mb-14 rounded-full"></div>
+                {/* overlay blur glow */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
 
                 <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
+                    className="relative z-10 text-center px-6"
                 >
-                    <MarcasSlider />
+                    <Image
+                        src="/logo.png"
+                        alt="Ferretería Palmares"
+                        width={160}
+                        height={160}
+                        className="mx-auto drop-shadow-2xl mb-6"
+                    />
+
+                    <h1 className="text-white text-5xl md:text-7xl font-extrabold drop-shadow-xl tracking-tight">
+                        Construimos Confianza
+                    </h1>
+
+                    <p className="text-gray-200 text-xl max-w-2xl mx-auto mt-5">
+                        Más de 20 años brindando calidad, servicio y soluciones para tus proyectos.
+                    </p>
+
+                    <a
+                        href="https://wa.me/50600000000"
+                        target="_blank"
+                        className="inline-block mt-12 px-10 py-4 rounded-full
+                        bg-palmares-green hover:bg-palmares-yellow hover:text-black
+                        text-white font-semibold text-lg
+                        shadow-[0_0_25px_rgba(63,174,41,0.6)]
+                        hover:shadow-[0_0_35px_rgba(255,214,0,0.7)]
+                        transition-all duration-300"
+                    >
+                        Contáctanos
+                    </a>
                 </motion.div>
             </section>
 
-            {/* SUCURSALES */}
-            <section className="px-6 md:px-20 my-24">
-                <h2 className="text-4xl font-bold text-palmares-green mb-10 text-center">
-                    Sucursales
-                </h2>
+            {/* SECCIÓN VALORES / BENEFICIOS */}
+            <section className="py-24 px-6 md:px-20 bg-white">
+                <motion.h2
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    className="text-4xl font-bold text-center text-gray-900 mb-16"
+                >
+                    ¿Por qué elegirnos?
+                </motion.h2>
 
-                <div className="grid md:grid-cols-2 gap-12">
+                <div className="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
                     {[
                         {
-                            nombre: "Palmares",
-                            descripcion: "Pérez Zeledón, San José",
-                            url: "https://www.google.com/maps?q=Ferreteria+Palmares+Uvita",
+                            titulo: "Experiencia",
+                            desc: "Décadas apoyando proyectos en la zona sur.",
+                            icon: "🏗️"
                         },
                         {
-                            nombre: "Uvita",
-                            descripcion: "Uvita, Puntarenas",
-                            url: "https://www.google.com/maps?q=Ferreteria+Palmares",
+                            titulo: "Calidad Garantizada",
+                            desc: "Trabajamos solo con marcas de prestigio.",
+                            icon: "⭐"
                         },
-                    ].map((suc, i) => (
+                        {
+                            titulo: "Atención Profesional",
+                            desc: "Nuestro equipo te asesora con soluciones reales.",
+                            icon: "🤝"
+                        },
+                    ].map((item, i) => (
                         <motion.div
                             key={i}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: i * 0.1 }}
-                            className="p-8 border rounded-2xl shadow-md hover:shadow-xl transition bg-white"
+                            className="p-10 bg-white shadow-xl rounded-2xl border hover:shadow-2xl transition cursor-default"
                         >
-                            <h3 className="text-2xl font-semibold text-gray-900 mb-2">
-                                {suc.nombre}
+                            <div className="text-5xl mb-4">{item.icon}</div>
+                            <h3 className="text-2xl font-bold mb-2 text-gray-900">
+                                {item.titulo}
                             </h3>
-                            <p className="text-gray-600 text-lg">{suc.descripcion}</p>
-
-                            <a
-                                href={suc.url}
-                                target="_blank"
-                                className="text-palmares-green underline mt-4 inline-block font-medium"
-                            >
-                                Ver en mapa
-                            </a>
+                            <p className="text-gray-600 text-lg">
+                                {item.desc}
+                            </p>
                         </motion.div>
                     ))}
                 </div>
             </section>
 
-            {/* POSTS FUTUROS */}
-            <section className="px-6 md:px-20 pb-28">
-                <h2 className="text-4xl font-bold text-palmares-green text-center mb-12">
-                    Últimas publicaciones
+            {/* MARCAS */}
+            <section className="py-24 bg-gray-50">
+                <h2 className="text-4xl font-bold text-palmares-green text-center">
+                    Marcas que confían en nosotros
+                </h2>
+                <div className="w-24 h-1 bg-palmares-yellow mx-auto mt-3 mb-12 rounded-full"></div>
+
+                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
+                    <MarcasSlider />
+                </motion.div>
+            </section>
+
+            {/* SUCURSALES PREMIUM */}
+            <section className="py-24 px-6 md:px-20 bg-white">
+                <h2 className="text-4xl font-bold text-palmares-green mb-14 text-center">
+                    Visítanos
                 </h2>
 
-                <div className="grid md:grid-cols-3 gap-10">
-                    {[1, 2, 3].map((i) => (
+                <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                    {[
+                        {
+                            nombre: "Palmares",
+                            dir: "Pérez Zeledón, San José",
+                            url: "https://www.google.com/maps?q=Ferreteria+Palmares",
+                            img: "/sucursal1.jpg"
+                        },
+                        {
+                            nombre: "Uvita",
+                            dir: "Uvita, Puntarenas",
+                            url: "https://www.google.com/maps?q=Ferreteria+Palmares+Uvita",
+                            img: "/sucursal2.jpg"
+                        }
+                    ].map((s, i) => (
                         <motion.div
                             key={i}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6 }}
-                            className="h-60 bg-gray-100 rounded-2xl shadow-sm hover:shadow-lg transition flex items-center justify-center text-gray-400 text-xl font-medium"
+                            className="rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition bg-white border"
                         >
-                            Publicación {i}
+                            <Image
+                                src={s.img}
+                                alt={s.nombre}
+                                width={800}
+                                height={500}
+                                className="object-cover w-full h-56"
+                            />
+
+                            <div className="p-8">
+                                <h3 className="text-2xl font-bold text-gray-900">{s.nombre}</h3>
+                                <p className="text-gray-600 text-lg mt-1">{s.dir}</p>
+
+                                <a
+                                    href={s.url}
+                                    target="_blank"
+                                    className="inline-block mt-5 text-palmares-green font-semibold underline text-lg"
+                                >
+                                    Ver en mapa
+                                </a>
+                            </div>
                         </motion.div>
                     ))}
                 </div>
             </section>
 
-            {/* WHATSAPP FLOATING */}
+            {/* WHATSAPP FLOAT */}
             <a
                 href="https://wa.me/50600000000"
                 target="_blank"
-                className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-xl hover:bg-green-600 transition"
+                className="fixed bottom-6 right-6 bg-palmares-green text-white p-4 rounded-full shadow-2xl hover:bg-palmares-yellow hover:text-black transition"
             >
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 32 32"
-                    className="w-8 h-8 fill-current"
-                >
-                    <path d="M16 .5C7.44.5.5 7.44.5 16c0 2.82.74 5.57 2.15 8.01L.5 31.5l7.7-2.02A15.4 15.4 0 0 0 16 31.5c8.56 0 15.5-6.94 15.5-15.5S24.56.5 16 .5zM16 28.7c-2.52 0-4.97-.67-7.11-1.94l-.51-.3-4.57 1.2 1.22-4.46-.33-.55A13.17 13.17 0 0 1 2.8 16C2.8 9 9 2.8 16 2.8S29.2 9 29.2 16 23 28.7 16 28.7z" />
-                    <path d="M23.3 19.1c-.39-.2-2.32-1.15-2.68-1.28-.36-.13-.63-.2-.9.2-.27.39-1.04 1.28-1.28 1.54-.23.26-.47.29-.86.1-.39-.2-1.64-.6-3.12-1.92-1.15-1.03-1.93-2.3-2.16-2.69-.23-.39-.02-.6.17-.79.18-.18.39-.47.59-.7.2-.23.26-.39.39-.65.13-.26.07-.49-.03-.69-.1-.2-.9-2.15-1.23-2.93-.32-.78-.66-.67-.9-.67-.23 0-.49-.03-.75-.03-.26 0-.69.1-1.05.49-.36.39-1.38 1.34-1.38 3.27 0 1.93 1.41 3.8 1.61 4.07.2.26 2.78 4.35 6.75 6.01 3.97 1.66 3.97 1.11 4.68 1.04.72-.07 2.32-.95 2.65-1.86.33-.91.33-1.69.23-1.86-.1-.16-.36-.26-.75-.46z" />
-                </svg>
+                <Image src="/whatsapp.svg" alt="WhatsApp" width={35} height={35} />
             </a>
         </div>
     );

@@ -1,15 +1,18 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Fuente moderna y más premium */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-/* Fuente limpia y moderna */
-body {
-    font-family: 'Inter', sans-serif;
-    background: #ffffff;
-    color: #333;
+html, body {
+    font-family: "Inter", sans-serif !important;
 }
 
-/* Estilo suave de scroll */
-* {
-    scroll-behavior: smooth;
+.section-title {
+    @apply text-4xl md:text-5xl font-extrabold text-palmares-green text-center;
+}
+
+.section-subline {
+    @apply w-24 h-1 bg-palmares-yellow mx-auto mt-3 mb-14 rounded-full;
+}
+
+.card {
+    @apply bg-white rounded-2xl shadow-md hover:shadow-xl transition p-8;
 }

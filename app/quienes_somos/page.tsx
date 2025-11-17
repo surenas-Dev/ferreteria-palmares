@@ -3,30 +3,26 @@
 export default function QuienesSomos() {
     const historia = getHistoria();
     const hitos = getHitos();
-    const noticias = getNoticias();
 
     return (
-        <div>
-            <h1 className="text-3xl font-bold mb-6">Quiénes somos</h1>
+        <div className="max-w-6xl mx-auto px-6 py-20">
+            <h1 className="section-title">Quiénes Somos</h1>
+            <div className="section-subline"></div>
 
-            <p className="mb-6">{historia}</p>
+            <p className="text-gray-700 text-lg leading-relaxed max-w-3xl mx-auto mb-16">
+                {historia}
+            </p>
 
-            <h2 className="text-2xl font-bold mb-4">Hitos</h2>
-            <ul className="list-disc ml-6">
+            {/* Hitos */}
+            <h2 className="text-3xl font-bold text-palmares-green mb-6">Nuestros Hitos</h2>
+            <div className="grid md:grid-cols-2 gap-8">
                 {hitos.map((h, i) => (
-                    <li key={i}>
-                        <strong>{h.anio}:</strong> {h.evento}
-                    </li>
+                    <div key={i} className="card">
+                        <h3 className="text-xl font-semibold text-gray-900">{h.anio}</h3>
+                        <p className="text-gray-600 mt-2">{h.evento}</p>
+                    </div>
                 ))}
-            </ul>
-
-            <h2 className="text-2xl font-bold mt-8 mb-4">Noticias</h2>
-            {noticias.map((n) => (
-                <div key={n.id} className="mb-4">
-                    <h3 className="text-xl font-semibold">{n.titulo}</h3>
-                    <p>{n.descripcion}</p>
-                </div>
-            ))}
+            </div>
         </div>
     );
 }
