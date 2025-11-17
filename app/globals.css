@@ -2,39 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ========== COLORES GLOBALES ========== */
-:root {
-    --background: #ffffff;
-    --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background: #0a0a0a;
-        --foreground: #ededed;
-    }
-}
-
-/* ========== ESTILOS GENERALES ========== */
-html,
+/* Fuente limpia y moderna */
 body {
     font-family: 'Inter', sans-serif;
     background: #ffffff;
     color: #333;
 }
 
-/* ========== CONTENEDORES ========== */
-section {
-    @apply max-w-7xl mx-auto;
-}
-
-/* ========== TITULOS ========== */
-h1,
-h2,
-h3,
-h4 {
-    @apply font-bold;
-}
-{
+/* Estilo suave de scroll */
+* {
     scroll-behavior: smooth;
 }
